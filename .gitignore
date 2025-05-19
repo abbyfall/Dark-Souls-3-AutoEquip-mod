@@ -1,0 +1,9 @@
+.vs/
+x64/
+*.tlog
+*.ipch
+*.db
+*.opendb
+*.pdb
+info.txt
+addr.txt
