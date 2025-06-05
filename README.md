@@ -1,12 +1,12 @@
 ﻿# Dark Souls 3 auto-equip mod
-This standalone modification allows you to automatically equip items you get in-game and upgrade taken weapons on the fly. Weapons will no longer be +0 throughout the game - the modification randomly upgrades them up to the previous player's maximum, which was obtained by manual reinforcement from the blacksmith. There is also an option to reduce weapon stat requirements. The mod was created to make random runs more fun and even more random. All mod features are customizable and optional.
+This modification allows you to automatically equip items you get in-game and upgrade taken weapons on the fly. Weapons will no longer be +0 throughout the game - the modification randomly upgrades them up to the player's maximum, which is obtained by manually reinforcing weapons at the blacksmith. The mod was created to make random runs more fun and even more random. All mod features are customizable and optional.
 
 ## Features
-- Auto-equip weapons, armor and rings. Any category can be excluded from auto equip
+- Auto-equip weapons, armor and rings. Any category can be excluded
 - Weapons can be automatically upgraded up to player's maximum when picked up
 - Weapon can get a random infusion with a certain chance (customizable)
 - Weapons stat requirements can be reduced (halving or disabling requirements is supported)
-- For even faster runs there is an option to get only higher upgrades for weapons
+- For even faster runs there is an option to get high weapon upgrades only 
 
 ### Details
 - Only newly obtained weapons are affected
@@ -23,7 +23,7 @@ The mod has no UI, to configure it you need to edit `AutoEquipSettings.ini` (it'
 To use the mod with "*ModEngine 2*" you can put `d3d9.dll` in  "*ModEngine 2*"  folder where `launchmod_darksouls3.bat` is located, optionally renaming the DLL in any name: `d3d9.dll` -> `myautoequipmod.dll` for example. Just don't forget to edit `config_darksouls3.toml`. If you want the mod to load with "*ModEngine 2*" edit the setting "`with external_dlls`". Example: `with external_dlls = ["myautoequipmod.dll", ]`
 
 ## Compatibility
-Steam**™** version of Dark Souls III 1.15.2\
+Compatible with the latest version of Dark Souls III on Steam*™* (1.15.2)\
 The mod must be compatible with any mod that does not interfere with the main game code and stick to the vanilla item id scheme. You can play with static Item and enemy randomizer, which is the recommended way.
 
 ## Credits
