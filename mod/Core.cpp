@@ -36,6 +36,7 @@ bool ModCore::Initialize()
 	DebugPrint("[Randomizer] - RandomInfusionChance = %i", Settings::RandomInfusionChance);
 	DebugPrint("[Randomizer] - ReinforceShopWeapons = %i", Settings::ReinforceShopWeapons);
 	DebugPrint("[Randomizer] - HighUpgrades = %i", Settings::MoreUpgradedWeapons);
+	DebugPrint("[Randomizer] - MaxUpgrades = %i", Settings::MaxUpgradedWeapons);
 	DebugPrint("[Misc] - LessWeaponRequirements = %i", Settings::LessWeaponRequirements);
 #endif
 
@@ -124,6 +125,7 @@ bool Settings::LoadSettings(const std::string& filename)
 
 	ReinforceShopWeapons = reader.GetBoolean("Randomizer", "ReinforceShopWeapons", false);
 	MoreUpgradedWeapons = reader.GetBoolean("Randomizer", "HighUpgrades", false);
+	MaxUpgradedWeapons = reader.GetBoolean("Randomizer", "MaxUpgrades", false);
 
 	LessWeaponRequirements = static_cast<WeaponRequirements>(reader.GetInteger("Misc", "LessWeaponRequirements", 0));
 	return true;

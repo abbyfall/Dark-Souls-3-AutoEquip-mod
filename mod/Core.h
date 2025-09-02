@@ -39,4 +39,5 @@ public:
 	static inline int RandomInfusionChance;
 	static inline bool ReinforceShopWeapons;
 	static inline bool MoreUpgradedWeapons;
+	static inline bool MaxUpgradedWeapons;
 };

@@ -1,4 +1,4 @@
-﻿# Dark Souls 3 auto-equip mod
+ # Dark Souls 3 auto-equip mod
 This modification allows you to automatically equip items you get in-game and upgrade taken weapons on the fly. Weapons will no longer be +0 throughout the game - the modification randomly upgrades them up to the player's maximum, which is obtained by manually reinforcing weapons at the blacksmith. The mod was created to make random runs more fun and even more random. All mod features are customizable and optional.
 
 ## Features

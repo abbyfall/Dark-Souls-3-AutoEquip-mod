@@ -29,16 +29,27 @@ int WeaponReforger::Reforge(int itemID)
 
 			if (Settings::RandomWeaponUpgrades && maxUpgrade > preupgrade)
 			{
-				if (Settings::MoreUpgradedWeapons)
-				{
-					decltype(minUpgrade) newBottom = maxUpgrade / 2 + (maxUpgrade & 1);
-					if (minUpgrade < newBottom)
-					{
-						minUpgrade = newBottom;
-					}
-				}
+				int valueToIncrease; //amount to increase itemID by i.e. weapon upgrade level
 
-				itemID += RandomizeNumber<DWORD>(minUpgrade, maxUpgrade) - preupgrade;
+				if(Settings::MaxUpgradedWeapons)
+				{
+					//weapon is upgraded to the highest possible level
+					valueToIncrease = maxUpgrade - preupgrade;
+				}
+				else
+				{
+					//weapon upgrade is randomised
+					if (Settings::MoreUpgradedWeapons)
+					{
+						decltype(minUpgrade) newBottom = maxUpgrade / 2 + (maxUpgrade & 1);
+						if (minUpgrade < newBottom)
+						{
+							minUpgrade = newBottom;
+						}
+					}
+					valueToIncrease = RandomizeNumber<DWORD>(minUpgrade, maxUpgrade) - preupgrade;
+				}
+				itemID += valueToIncrease;
 			}
 
 			if (Settings::RandomInfusionChance && infusable)
